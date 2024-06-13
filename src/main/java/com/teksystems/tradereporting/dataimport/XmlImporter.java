@@ -41,7 +41,7 @@ public class XmlImporter implements CommandLineRunner {
         List<Path> allFiles = findAllXMLs(directoriesList);
         if (allFiles.isEmpty()) {
             this.logger.log(Level.WARNING,
-                    "Could not find any files matching the patterns provided: " + String.join(", ", directoriesList));
+                    "Could not find any files in the directories provided: " + String.join(", ", directoriesList));
             return;
         }
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
