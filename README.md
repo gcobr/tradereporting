@@ -10,6 +10,7 @@ Dependencies in this project are managed using [Apache Maven](https://maven.apac
 
 1. The filter criteria is fixed as documented in the original requirements. Users are not able to pass new values to filter tradeEventResults in or out of the response as part of their request to the service. Thus, the service receives no parameters.
 2. The original requirements ask to filter out any trades where the name of the buyer is an anagram of the name of the seller and vice versa. An anagram is a word, phrase, or name that is formed by rearranging the letters of another; thus, BANK_EMU is an anagram of EMU_BANK. Only trades where the name of the buyer is not an anagram of the name of the seller (and vice versa) should be included in the responses of the service.
+3. The sentence "new API is needed as the triggering point" found in the original requirements was interpreted as meaning that a REST API endpoint should be implemented to return the filtered trade events.
 
 ## Design decisions
 
