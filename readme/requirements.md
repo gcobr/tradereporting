@@ -14,9 +14,9 @@
 > 
 > Xml elements (fields) to use Format: xpath expression from event file => column header name
 > 
-> `//buyerPartyReference/@href => buyer_party`
-> `//sellerPartyReference/@href => seller_party`
-> `//paymentAmount/amount => premium_amount`
+> `//buyerPartyReference/@href => buyer_party`<br>
+> `//sellerPartyReference/@href => seller_party`<br>
+> `//paymentAmount/amount => premium_amount`<br>
 > `//paymentAmount/currency => premium_currency`
 > 
 > Filter Criteria Only report events to JSON response if the following 3 criteria are true:
