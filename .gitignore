@@ -1,0 +1,9 @@
+# IDEs
+.idea
+
+# macOS
+.DS_Store
+
+# Maven
+target
+
