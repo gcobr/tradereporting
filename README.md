@@ -1,6 +1,8 @@
 # Trade reporting
 
-This application is a demonstration of how to build an API with SpringBoot following the requirements in [this document](./readme/requirements.md).
+This application is a demonstration of how to build an API with SpringBoot following the requirements in [this document](./readme/requirements.md). It starts by ingesting trade event records from XML files into a local H2 SQL database. These records can then be queried through a REST API. Users can issue an HTTP GET request against the `/trades` path to obtain the results. The application performs a query against the database using hard-coded criteria as per the original requirements. Requirements also specificy some criteria that cannot be easily applied through a database query; therefore, the application applies an additional filter in memory to narrow down the result set even further after the first query returned. Only filtered results are then returned in a JSON response.
+
+The process of running the query and applying one or more filters has been modularized through Spring components to make changes and extensions easier in the future. A more detailed explanation is provided below.
 
 ## Dependency management
 
